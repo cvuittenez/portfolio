@@ -1,0 +1,143 @@
+html{
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 2vh;
+}
+
+.blanc{
+    font-family: "Fira Sans";
+    font-weight: normal;
+    font-size: 5vh;
+    color: white;
+}
+
+h1 .blanc:hover{
+    font-family: "Futura XBlk BT";
+    font-size: 5vh;
+    color: #f39200;
+}
+
+.orange{
+    font-family: "Futura XBlk BT";
+    font-weight: normal;
+    font-size:5vh;
+    color: #f39200;
+    padding-left: 1vw;
+}
+
+h1 .orange:hover{
+    font-family: "Fira Sans";
+    font-weight: normal;
+    color: white;
+    font-size: 5vh;
+}
+
+
+h1{
+    display: flex;
+    padding-top: 8%;
+    margin-bottom: 5%;
+}
+
+
+.fira ul li p{
+    font-family: "Fira Sans";
+    color: white;
+    list-style: none;
+}
+
+.futura ul li p{
+    font-family: "Futura XBlk BT";
+    color: #f39200;
+
+}
+
+.futura ul,
+.fira ul {
+    padding-top: 30%;
+    list-style: none;
+    margin-right: 8px;
+}
+
+.header{
+    padding: 2vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*A FIXER*/
+
+/*@media (max-width: 844px) {*/
+/*    .blanc .orange{*/
+/*        font-size: 20vw;*/
+/*    }*/
+/*    h1{*/
+/*        padding-left: 10vh;*/
+/*        padding-top: 2vh;*/
+/*    }*/
+/*}*/
+
+.fond {
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    width: 200%;
+    z-index: -100;
+}
+
+.fond div{
+    position: absolute;
+    right: 15%;
+    opacity: 60%;
+    background-repeat: no-repeat;
+    -o-background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.bouton {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.bouton button{
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #f39200;
+    border: none;
+}
+
+.bouton :hover{
+    background-color: transparent;
+    color: #fff;
+}
+
+.bouton a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-family: "Fira Sans";
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.logo img{
+    width: 10vh;
+    height: auto;
+}

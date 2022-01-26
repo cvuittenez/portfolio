@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "titre": "Casa Vicens",
+    "annee": "2021",
+    "type": "collectif",
+    "image": "/",
+    "//": ""
+  },
+  {
+    "id": "2",
+    "titre": "Casa Vicens",
+    "annee": "2021",
+    "type": "collectif",
+    "/": "/",
+    "//": ""
+  },
+  {
+    "id": "3",
+    "titre": "Casa Vicens",
+    "annee": "2021",
+    "type": "collectif",
+    "/": "/",
+    "//": ""
+  }
+]

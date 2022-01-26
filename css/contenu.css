@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: black;
+}
+
+/*/HEADER*/
+h1 {
+    color: white;
+    font-family: "Futura XBlk BT";
+    font-size: 2.5vw;
+}
+
+header{
+    background-color: black;
+    height: 12vh;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Fira Sans", serif;
+    margin-top: 2vh;
+}
+
+/*/FOOTER*/
+
+main{
+    min-height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    background-color: black;
+    width: 100vw;
+    display: flex;
+}
+
+.container {
+    width: 100vw;
+    padding-bottom: 5vw;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.colonne1 ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.colonne ul,
+.colonne1 ul {
+    margin-top: 2vh;
+}
+
+.colonne ul li,
+.colonne1 ul li{
+    list-style-type: none;
+}
+
+.colonne ul li a,
+.colonne1 ul li{
+    text-decoration: none;
+    color: white;
+    font-family: "Fira Sans", serif;
+}
+
+.colonne ul li a:hover,
+.colonne1 ul li a:hover{
+    color: #f39200;
+}
+
+.colonne h3,
+.colonne1 h3{
+    color: white;
+    font-family: "Futura XBlk BT", serif;
+}
+
+/*CONTENU*/
+
+.inline {
+    display: flex;
+}
+
+.txt p, h1{
+    display: block;
+    margin: auto;
+    color: white;
+    max-width: 20vw;
+}
+
+p {
+    font-family: "Fira Sans";
+    font-size: 1em;
+}
+
+.inline img {
+    width: 50vw;
+    height: auto;
+    margin: 0;
+}
+
+.txt{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.content-banner {
+    padding-top: 15vh;
+    padding-bottom: 20vh;
+    background-color: #050505;
+}
+
+.content-banner img {
+    width: 100%;
+    justify-content: center;
+}
+
+.content-banner h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.content-banner p{
+    padding-top: 10vh;
+    max-width: 60vw;
+    display: block;
+    margin: auto;
+    color: white;
+}
+
+.content-demi {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15vh;
+}
+
+.content-demi img{
+    width: 50vw;
+    height: auto;
+}
+
+.content-demi p{
+    display: block;
+    margin: auto;
+    max-width: 30vw;
+    color: white;
+}
+
+.content:last-child{
+    border-bottom: solid white 2px;
+}
