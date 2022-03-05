@@ -8,7 +8,6 @@ html{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 2vh;
 }
 
 .blanc{
@@ -18,7 +17,7 @@ html{
     color: white;
 }
 
-h1 .blanc:hover{
+h1:hover .blanc{
     font-family: "Futura XBlk BT";
     font-size: 5vh;
     color: #f39200;
@@ -32,7 +31,7 @@ h1 .blanc:hover{
     padding-left: 1vw;
 }
 
-h1 .orange:hover{
+h1:hover .orange{
     font-family: "Fira Sans";
     font-weight: normal;
     color: white;
@@ -42,91 +41,39 @@ h1 .orange:hover{
 
 h1{
     display: flex;
-    padding-top: 8%;
+    padding-top: 3%;
     margin-bottom: 5%;
 }
 
 
-.fira ul li p{
-    font-family: "Fira Sans";
-    color: white;
-    list-style: none;
-}
-
-.futura ul li p{
-    font-family: "Futura XBlk BT";
-    color: #f39200;
-
-}
-
-.futura ul,
-.fira ul {
-    padding-top: 30%;
-    list-style: none;
-    margin-right: 8px;
-}
-
 .header{
     padding: 2vh;
     display: flex;
-    justify-content: space-between;
-}
-
-/*A FIXER*/
-
-/*@media (max-width: 844px) {*/
-/*    .blanc .orange{*/
-/*        font-size: 20vw;*/
-/*    }*/
-/*    h1{*/
-/*        padding-left: 10vh;*/
-/*        padding-top: 2vh;*/
-/*    }*/
-/*}*/
-
-.fond {
-    height: 100%;
-    position: absolute;
-    top: 5%;
-    width: 200%;
-    z-index: -100;
-}
-
-.fond div{
-    position: absolute;
-    right: 15%;
-    opacity: 60%;
-    background-repeat: no-repeat;
-    -o-background-size: cover;
-    background-position: center center;
-    height: 100%;
-    width: 100%;
+    justify-content: space-evenly;
 }
 
 .bouton {
+    width: 70vw;
     display: flex;
     justify-content: center;
-    margin-top: 5%;
+    margin-top: 10%;
+    margin-left: 12.5vw;
 }
 
 .bouton button{
-    border-radius: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    background-color: #f39200;
+    margin-left: 4vw;
     border: none;
+    background-color: transparent;
 }
 
-.bouton :hover{
-    background-color: transparent;
-    color: #fff;
-}
 
 .bouton a {
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 15px;
     font-family: "Fira Sans";
 }
@@ -134,10 +81,89 @@ h1{
 .logo{
     display: flex;
     justify-content: center;
-    margin-top: 15%;
+    margin-top: 2.5%;
+    margin-bottom: -10vh;
 }
 
 .logo img{
-    width: 10vh;
+    width: 40vh;
     height: auto;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1000;
+}
+/**/
+button::before {
+    transform: scaleY(0);
+    transform-origin: bottom right;
+}
+
+button:hover::before {
+    transform: scaleY(1);
+    transform-origin: bottom left;
+}
+
+button::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: #f39200;
+    z-index: -1;
+    transition: transform .3s ease;
+}
+
+button {
+    position: relative;
+    font-size: 2.4vh;
+}
+/**/
+
+@media (max-width: 1200px) {
+    *{
+        overflow-x: hidden;
+    }
+    .logo img{
+        width: 50vw;
+        height: auto;
+    }
+    .logo{
+        width: 100%;
+        justify-content: center;
+    }
+    .bouton{
+        width: 100%;
+        padding-top: 10vh;
+        padding-right: 20vw;
+        justify-content: center;
+    }
+    .bouton button{
+        margin-top: 2vh;
+        padding: 5px;
+        font-size: 3.5em;
+        display: block;
+    }
+    .bouton button a{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    #myVideo{
+        left: -1361px;
+    }
+    h1{
+        font-size: 4em;
+        display: block;
+    }
+
 }

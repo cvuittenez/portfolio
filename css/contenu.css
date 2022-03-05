@@ -2,7 +2,29 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
     overflow-x: hidden;
+}
+
+#mobile {
+    display: none;
+}
+
+a{
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 2.5vh;
+    font-family: "Fira Sans";
+}
+
+nav ul {
+    display: flex;
 }
 
 body{
@@ -14,6 +36,16 @@ h1 {
     color: white;
     font-family: "Futura XBlk BT";
     font-size: 2.5vw;
+}
+
+h2 {
+    display: flex;
+    font-family: Futura;
+    font-size: 2vw;
+    font-weight: bold;
+    color: white;
+    height: auto;
+    justify-content: center;
 }
 
 header{
@@ -49,18 +81,15 @@ main{
     padding: 0;
 }
 
-.footer{
-    background-color: black;
-    width: 100vw;
-    display: flex;
-}
-
 .container {
     width: 100vw;
     padding-bottom: 5vw;
     margin-top: 5vw;
     display: flex;
     justify-content: space-evenly;
+    height: auto;
+    background-position: 120px 10px;
+    background-repeat: no-repeat;
 }
 
 .colonne1 ul{
@@ -76,6 +105,7 @@ main{
 .colonne ul li,
 .colonne1 ul li{
     list-style-type: none;
+    margin-left: 1vw;
 }
 
 .colonne ul li a,
@@ -102,11 +132,18 @@ main{
     display: flex;
 }
 
-.txt p, h1{
+.txt p{
     display: block;
     margin: auto;
     color: white;
     max-width: 20vw;
+}
+
+h1 {
+    display: block;
+    margin: auto;
+    color: white;
+    max-width: 12vw;
 }
 
 p {
@@ -173,4 +210,139 @@ p {
 
 .content:last-child{
     border-bottom: solid white 2px;
+}
+
+ul li {
+    list-style: none;
+}
+
+@media (max-width: 1200px) {
+    /*FOOTER*/
+    .container {
+        display: inherit;
+        width: 100vw;
+        height: auto;
+        padding-bottom: 200px;
+    }
+    .colonne h3,
+    .colonne ul li,
+    .colonne1 h3,
+    .colonne1 ul{
+        display: flex;
+        justify-content: center;
+    }
+    .colonne,
+    .colonne1{
+        margin-top: 4vh;
+    }
+
+    .colonne h3,
+    .colonne1 h3{
+        font-size: 2.5vh;
+    }
+
+    .colonne ul li a{
+        font-size: 2vh;
+    }
+
+    .colonne1 ul li a{
+        font-size: 1.5vh;
+        margin-left: 10px;
+    }
+    /*FOOTER*/
+
+    /*CONTENT*/
+
+    p {
+        font-size: 2em;
+    }
+
+    .inline {
+        display: initial;
+        width: 100vw;
+    }
+
+    .inline .txt {
+        width: auto;
+        margin-bottom: 20px;
+        height: auto;
+    }
+
+    .inline .txt h1{
+        font-size: 3.5em;
+        max-width: 100vw;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .inline img{
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+        margin: auto;
+    }
+
+    #desktop{
+        display: none;
+    }
+
+    #mobile {
+        display: inherit;
+    }
+
+    .inline p{
+        max-width: 50vw;
+        font-size: 1.5em;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .content-banner{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .content-banner h1{
+        font-size: 3em;
+        max-width: 30vw;
+        margin-bottom: 100px;
+    }
+
+    .content-banner p{
+        padding-top: 100px;
+        font-size: 1.5em;
+    }
+
+    .content-demi img {
+        max-width: 40%;
+    }
+
+    .content-demi p {
+        max-width: 50%;
+        font-size: 1.5em;
+    }
+
+    .content-demi {
+        margin-bottom: 100px;
+    }
+
+    h2 {
+        font-size: 4em;
+        margin-bottom: 4em;
+        margin-top: 4em;
+    }
+
+    h1 {
+        font-size: 5em;
+        max-width: 40vw;
+        margin-top: 2vh;
+    }
+
+    img {
+       width: 50vw;
+        margin-bottom: 10vw;
+    }
+    /*CONTENT*/
+
 }
