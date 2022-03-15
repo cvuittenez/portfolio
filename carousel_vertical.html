@@ -8,8 +8,19 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/carousel/logoperso.png">
     <title>Portfolio | Accueil</title>
     <link rel="stylesheet" href="css/carousel_vertical.css">
+    <link rel="stylesheet" href="css/loader.css">
 </head>
 <body>
+
+<div class="loader">
+    <span class="lettre">L</span>
+    <span class="lettre">O</span>
+    <span class="lettre">A</span>
+    <span class="lettre">D</span>
+    <span class="lettre">I</span>
+    <span class="lettre">N</span>
+    <span class="lettre">G</span>
+</div>
 
 <div class="slider-container">
 
@@ -17,7 +28,11 @@
         <div style="background-color: #000; background-image: url('img/carousel/image-test.png')">
             <h1>Casa Vicens</h1>
             <p>mini boss, en groupe</p>
-            <button><a href="casa-vicens.html">Voir plus</a></button>
+<!--            <div class="bouton">-->
+            <button>
+                <a href="casa-vicens.html">Voir plus</a>
+            </button>
+<!--            </div>-->
         </div>
         <div style="background-color: #000; background-image: url('img/carousel/image-test(1).png')">
             <h1>POTHEM LLC</h1>
@@ -61,6 +76,13 @@
 </div>
 
 <script src="js/app.js"></script>
+<script>
+    const loader = document.querySelector('.loader');
+
+    window.addEventListener('load', () => {
+        loader.classList.add('fondu');
+    })
+</script>
 
 </body>
 </html>

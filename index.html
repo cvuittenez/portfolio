@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio | Clément Vuittenez</title>
+    <link rel="stylesheet" href="css/landing.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/carousel/logoperso.png">
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <link rel="stylesheet" href="css/testlanding.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <script src="js/loader.js"></script>
+    <style>
+        canvas {
+            position: absolute;
+            outline: none;
+            top: 0;
+            z-index: -1;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="loader">
+    <span class="lettre">L</span>
+    <span class="lettre">O</span>
+    <span class="lettre">A</span>
+    <span class="lettre">D</span>
+    <span class="lettre">I</span>
+    <span class="lettre">N</span>
+    <span class="lettre">G</span>
+</div>
+
+<div class="header">
+
+    <h1><div class="blanc">Clément</div> <div class="orange">Vuittenez</div> </h1>
+
+</div>
+
+<div class="presentation" style="display: flex;  margin: auto">
+    <p>
+        DESIGN</p>
+    <p>
+        COMMUNICATION</p>
+    <p>
+        DÉVELOPPEMENT</p>
+
+</div>
+
+<div class="logo">
+    <img src="img/carousel/logoperso.png"/>
+</div>
+
+<div class="bouton">
+    <button>
+        <a href="about.html">A propos</a>
+    </button>
+
+    <button>
+        <a href="carousel_vertical.html">Mes projets</a>
+    </button>
+
+    <button>
+        <a onclick="window.open(this.href); return false;" href="assets/CV_CV.pdf">Mon CV</a>
+    </button>
+</div>
+
+<script src="bibliothèque/OrbitControls.js"></script>
+<script src="bibliothèque/three.js"></script>
+<script src="js/script.js"></script>
+<script>
+    const loader = document.querySelector('.loader');
+
+    window.addEventListener('load', () => {
+        loader.classList.add('fondu');
+    })
+</script>
+</body>
+</html>

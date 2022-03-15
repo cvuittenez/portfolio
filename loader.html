@@ -7,18 +7,22 @@
 </head>
 <body>
 
-<div class="content">
-    <img src="https://picsum.photos/300/300/?random" />
-</div>
-
-<div class="loader-wrapper">
-    <span class="loader"><span class="loader-inner"></span></span>
+<div class="loader">
+    <span class="lettre">L</span>
+    <span class="lettre">O</span>
+    <span class="lettre">A</span>
+    <span class="lettre">D</span>
+    <span class="lettre">I</span>
+    <span class="lettre">N</span>
+    <span class="lettre">G</span>
 </div>
 
 <script>
-    $(window).on("load",function(){
-        $(".loader-wrapper").fadeOut("slow");
-    });
+    const loader = document.querySelector('.loader');
+
+    window.addEventListener('load', () => {
+        loader.classList.add('fondu');
+    })
 </script>
 
 </body>
